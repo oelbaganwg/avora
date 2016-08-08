@@ -10,22 +10,7 @@
 <?php include "domain.php" ?>
 <?php include "header_scripts.php" ?>
 
-<script>
-if((Browser.Platform.ios) || (Browser.Platform.webos) || (Browser.Platform.android)) {
-	window.addEventListener("load",function() {
-		// Set a timeout...
-		setTimeout(function(){
-			// Hide the address bar!
-			window.scrollTo(0, 1);
-		}, 0);
-	});
-}
-jQuery(document).delegate("a:not(.studylink, .refresh, .highslide, .back)", "click", function(event){
-		window.location=this.getAttribute("href");
-        return false;
-	});
-</script>
-   <meta name="apple-mobile-web-app-capable" content="yes" /> 
+
 </head>
 
 <body id="homepage" class="home">
