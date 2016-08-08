@@ -1,0 +1,219 @@
+/*! Flickity v2.0.2
+http://flickity.metafizzy.co
+---------------------------------------------- */
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+          tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  background: hsla(0, 0%, 100%, 0.75);
+  cursor: pointer;
+  z-index: 10;
+  /* vertically center */
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.flickity-prev-next-button:hover { background: white; }
+
+.flickity-prev-next-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #f79721;
+}
+
+.flickity-prev-next-button:active {
+  opacity: 0.6;
+}
+
+.flickity-prev-next-button.previous { left: 10px; }
+.flickity-prev-next-button.next { right: 10px; }
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+.flickity-prev-next-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+}
+
+.flickity-prev-next-button svg {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+.flickity-prev-next-button .arrow {
+  fill: #f79721;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  /* background: #333; */
+  background:#f79721;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
+/* external css: flickity.css */
+
+
+
+.gallery-cell {
+  width: auto; /* width:66% */ /* width:auto */
+  max-height: 300px;/* height:auto */ /*height: 450px;*/
+  margin-right: 9px;
+  background: #fff;
+  counter-increment: gallery-cell;
+}
+.gallery-cell img {
+  width: auto;  /* width:100% */ /*width: auto; */
+  max-height: 300px;/* height:auto */ /*height: 450px; */
+  margin-right: 0px;
+  display: block;
+  counter-increment: gallery-cell;
+}
+
+.gallery {
+  background: #fff;
+  max-width: 3000px;
+  margin: 0 auto;
+}
+
+.gallery-cell a {
+  width: 100%;
+  height: 100%;
+   /*border:solid 2px red; */
+  overflow:hidden;
+}
+
+
+
+/* second gallery thumnbnail */
+.gallery-nav {
+	margin-top:4px;	
+}
+.gallery-nav .gallery-grad {
+  background-color:rgba(255, 255, 255, 0.4);
+  position:absolute;
+  width: 80px;
+  height:60px;
+}
+.gallery-nav .gallery-grad:hover {
+  background-color:rgba(255, 255, 255, 0);
+}
+.gallery-nav .gallery-cell {
+  width: 80px;
+  height:60px;
+  margin-right: 4px;
+  counter-increment: carousel-cell;
+}
+.gallery-nav .gallery-cell img {
+  width: 80px;  /* width:100% */ /*width: auto; */
+  height:auto;/* height:auto */ /*height: 450px; */
+  margin-right: 0px;
+  display: block;
+  counter-increment: gallery-cell;
+}
+.gallery-nav .gallery-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+  display: block;
+  text-align: center;
+  /* content: counter(carousel-cell);
+  color: white; */
+}
+
+.gallery-nav .gallery-cell.is-nav-selected {
+  background: #f79721;
+}
+.is-nav-selected .gallery-grad {
+	display:none;	
+}
+
+
+@media (min-width: 768px) {
+.gallery-cell {
+  max-height: 440px;/* height:auto */ /*height: 450px; */
+}
+.gallery-cell img {
+ max-height: 440px;/* height:auto */ /*height: 450px; */
+}
+
+}
