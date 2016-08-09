@@ -33,4 +33,16 @@
   <preference name="android-installLocation" value="auto"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="org.apache.cordova.vibration"/>
+  
+    <plugin name="cordova-plugin-whitelist" source="npm" />
+	<allow-navigation href="http://testing.newworldgroup.com" />
+	<allow-navigation href="https://testing.newworldgroup.com" />
+	<allow-navigation href="http://cordova.apache.org/" />
+	<allow-navigation href="https://slack.cordova.io" />
+	<allow-navigation href="http://www.google-analytics.com/" />
+	<allow-navigation href="https://*.imgur.com/" />
+	<allow-navigation href="https://*.twitter.com/" />
+	<allow-navigation href="https://*.twimg.com/" />
+	<allow-navigation href="http://cordovablogs.discus.com/" />
+	<access origin="*" />
 </widget>
