@@ -33,8 +33,13 @@
   <preference name="android-installLocation" value="auto"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="org.apache.cordova.vibration"/>
-  
   <gap:plugin name="com.phonegap.plugin.statusbar" />
+    <icon src="icons/android/48x48.png" platform="android" qualifier="ldpi" />
+	<icon src="icons/android/icons/android/48x48.png" platform="android" qualifier="mdpi" />
+	<icon src="72x72.png" platform="android" qualifier="hdpi" />
+	<icon src="icons/android/96x96.png" platform="android" qualifier="xhdpi" />
+	<icon src="icons/android/144x144.png" platform="android" qualifier="xxhdpi" />
+	<icon src="icons/android/192x192.png" platform="android" qualifier="fr-xxhdpi" />
   <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true"><false/></gap:config-file>
 <gap:config-file platform="ios" parent="UIStatusBarHidden" overwrite="true"> <true/> </gap:config-file>
    <feature name="StatusBar"><param name="ios-package" value="CDVStatusBar" onload="true" /></feature>
