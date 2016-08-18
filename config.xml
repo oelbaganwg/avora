@@ -34,6 +34,7 @@
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="org.apache.cordova.vibration"/>
   <gap:plugin name="com.phonegap.plugin.statusbar" />
+     <splash src="splash.png" />
     <icon src="icons/android/48x48.png" platform="android" qualifier="ldpi" />
 	<icon src="icons/android/icons/android/48x48.png" platform="android" qualifier="mdpi" />
 	<icon src="72x72.png" platform="android" qualifier="hdpi" />
