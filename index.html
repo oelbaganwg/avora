@@ -51,7 +51,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.iframe-wrapper {
+.iframe-wrapper iframe {
    width: 100%;
    height: 100vh;
  }
@@ -59,11 +59,10 @@ table {
 </head>
 
 <body>
-    <iframe id="theframe" data-tap-disabled="true" src="http://testing.newworldgroup.com/avoraapp/" frameborder="0" scrolling="yes" overflow-scroll="true" class="iframe-wrapper">Your browser doesn't support iFrames.</iframe> 
-<script>
-var _theframe = document.getElementById("theframe");
-_theframe.contentWindow.location.href = _theframe.src;
-</script>
+<ion-content scroll="true" overflow-scroll="true" class="iframe-wrapper">
+    <iframe id="theframe" data-tap-disabled="true" src="http://testing.newworldgroup.com/avoraapp/" frameborder="0" scrolling="yes">Your browser doesn't support iFrames.</iframe> 
+</ion-content>
+
 
 
 </body>
