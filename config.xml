@@ -38,7 +38,7 @@
 		<!-- http://docs.phonegap.com/phonegap-build/configuring/icons-and-splash/#splashes -->
 	   <!-- default android and IOS splash -->
 	   <splash src="splash.png" />
-	   <splash src="icons/ios/Default.png" platform="ios" width="320" height="480" />
+	   <splash src="splash.png" platform="ios" width="320" height="480" />
 
 		<!-- android icons -->
 		<icon src="icons/android/48x48.png" platform="android" qualifier="ldpi" />
