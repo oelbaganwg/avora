@@ -36,12 +36,14 @@
   <gap:plugin name="com.phonegap.plugin.statusbar" />
         
 		<!-- http://docs.phonegap.com/phonegap-build/configuring/icons-and-splash/#splashes -->
+	   <!-- default android and IOS splash -->
 	   <splash src="splash.png" />
-	  
+	   <splash src="icons/ios/Default.png" platform="ios" width="320" height="480" />
+
 		<!-- android icons -->
 		<icon src="icons/android/48x48.png" platform="android" qualifier="ldpi" />
-		<icon src="icons/android/icons/android/48x48.png" platform="android" qualifier="mdpi" />
-		<icon src="72x72.png" platform="android" qualifier="hdpi" />
+		<icon src="icons/android/48x48.png" platform="android" qualifier="mdpi" />
+		<icon src="icons/android/72x72.png" platform="android" qualifier="hdpi" />
 		<icon src="icons/android/96x96.png" platform="android" qualifier="xhdpi" />
 		<icon src="icons/android/144x144.png" platform="android" qualifier="xxhdpi" />
 		<icon src="icons/android/192x192.png" platform="android" qualifier="fr-xxhdpi" />
@@ -62,22 +64,16 @@
 		<icon src="icons/ios/icon-40.png" platform="ios" width="40" height="40" />
 		<icon src="icons/ios/icon-40@2x.png" platform="ios" width="80" height="80" />
 
-		<!-- ios splash -->
-		<!-- iPhone and iPod touch -->
-		<splash src="icons/ios/Default.png" platform="ios" width="320" height="480" />
+		<!-- ios splash 
 		<splash src="icons/ios/Default@2x.png" platform="ios" width="640" height="960" />
-		<!-- iPhone 5 / iPod Touch (5th Generation) -->
 		<splash src="icons/ios/Default-568h@2x.png" platform="ios" width="640" height="1136" />
-		<!-- iPhone 6 -->
 		<splash src="icons/ios/Default-667h@2x.png" platform="ios" width="750" height="1334" />
 		<splash src="icons/ios/Default-Portrait-736h@3x.png" platform="ios" width="1242" height="2208" />
 		<splash src="icons/ios/Default-Landscape-736h@3x.png" platform="ios" width="2208" height="1242" />
-		<!-- iPad -->
 		<splash src="icons/ios/Default-Portrait.png" platform="ios" width="768" height="1024" />
 		<splash src="icons/ios/Default-Landscape.png" platform="ios" width="1024" height="768" />
-		<!-- Retina iPad -->
 		<splash src="icons/ios/Default-Portrait@2x.png" platform="ios" width="1536" height="2048" />
-		<splash src="icons/ios/Default-Landscape@2x.png" platform="ios" width="2048" height="1536" />
+		<splash src="icons/ios/Default-Landscape@2x.png" platform="ios" width="2048" height="1536" />-->
 
   <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true"><false/></gap:config-file>
 <gap:config-file platform="ios" parent="UIStatusBarHidden" overwrite="true"> <true/> </gap:config-file>
