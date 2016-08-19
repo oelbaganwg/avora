@@ -34,13 +34,33 @@
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="org.apache.cordova.vibration"/>
   <gap:plugin name="com.phonegap.plugin.statusbar" />
-     <splash src="splash.png" />
-    <icon src="icons/android/48x48.png" platform="android" qualifier="ldpi" />
-	<icon src="icons/android/icons/android/48x48.png" platform="android" qualifier="mdpi" />
-	<icon src="72x72.png" platform="android" qualifier="hdpi" />
-	<icon src="icons/android/96x96.png" platform="android" qualifier="xhdpi" />
-	<icon src="icons/android/144x144.png" platform="android" qualifier="xxhdpi" />
-	<icon src="icons/android/192x192.png" platform="android" qualifier="fr-xxhdpi" />
+        
+		<!-- http://docs.phonegap.com/phonegap-build/configuring/icons-and-splash/#splashes -->
+	   <splash src="splash.png" />
+	  
+		<!-- android icons -->
+		<icon src="icons/android/48x48.png" platform="android" qualifier="ldpi" />
+		<icon src="icons/android/icons/android/48x48.png" platform="android" qualifier="mdpi" />
+		<icon src="72x72.png" platform="android" qualifier="hdpi" />
+		<icon src="icons/android/96x96.png" platform="android" qualifier="xhdpi" />
+		<icon src="icons/android/144x144.png" platform="android" qualifier="xxhdpi" />
+		<icon src="icons/android/192x192.png" platform="android" qualifier="fr-xxhdpi" />
+		
+		<!-- iPhone 6 / 6+ -->
+		<icon src="icons/ios/icon-60@3x.png" platform="ios" width="180" height="180" />
+		<!-- iPhone / iPod Touch  -->
+		<icon src="icons/ios/icon-60.png" platform="ios" width="60" height="60" />
+		<icon src="icons/ios/icon-60@2x.png" platform="ios" width="120" height="120" />
+		<!-- iPad -->
+		<icon src="icons/ios/icon-76.png" platform="ios" width="76" height="76" />
+		<icon src="icons/ios/icon-76@2x.png" platform="ios" width="152" height="152" />
+		<!-- Settings Icon -->
+		<icon src="icons/ios/icon-small.png" platform="ios" width="29" height="29" />
+		<icon src="icons/ios/icon-small@2x.png" platform="ios" width="58" height="58" />
+		<!-- Spotlight Icon -->
+		<icon src="icons/ios/icon-40.png" platform="ios" width="40" height="40" />
+		<icon src="icons/ios/icon-40@2x.png" platform="ios" width="80" height="80" />
+
   <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true"><false/></gap:config-file>
 <gap:config-file platform="ios" parent="UIStatusBarHidden" overwrite="true"> <true/> </gap:config-file>
    <feature name="StatusBar"><param name="ios-package" value="CDVStatusBar" onload="true" /></feature>
